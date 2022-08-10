@@ -7,7 +7,7 @@ void setup()
   pinMode(A0, INPUT); // Read the LDR sensor Value analog input.
   pinMode(2, INPUT);  // Read the PIR motion sensor value digital Input
   pinMode(8, OUTPUT); // Write the Relay output value, digital output
-  Serial.begin(9600);
+  //Serial.begin(9600);
 
 }
 
@@ -26,7 +26,7 @@ void loop()
     }
   } else {
     digitalWrite(8, LOW);
-    Serial.println(LightSensorVal);
+    //Serial.println(LightSensorVal);
     delay(300); // Wait for 300 millisecond(s)
   }
 }
