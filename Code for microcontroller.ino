@@ -4,7 +4,7 @@ int RelayOutputVal = 0;  //Output Relay
 
 void setup()
 {
-  pinMode(A0, INPUT); // Read the LDR sensor Value digital Input//A0=14
+  pinMode(A0, INPUT); // Read the LDR sensor Value analog input.
   pinMode(2, INPUT);  // Read the PIR motion sensor value digital Input
   pinMode(8, OUTPUT); // Write the Relay output value, digital output
   Serial.begin(9600);
